@@ -11,3 +11,4 @@ The repository should be considered a "living document", i.e. changes will be ma
 - Style_Guide.md: The Club Style Guide, this document sets the rules for how robot code should be formatted
 - .clang-format: The clangd language server is the accepted standard for C/C++ language servers, and this file provides the club's ruleset for indentation for C/C++ files for the clang-format command in clangd.
 - Useful_Links.md: A list of useful links to other websites
+- git_policies.md: Rules for using git and Github
