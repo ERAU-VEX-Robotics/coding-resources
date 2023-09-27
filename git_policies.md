@@ -12,7 +12,7 @@ For non-robot repositories, release numbers should follow the [Semantic Versioni
 
 ## Commit Naming 
 
-Commit names should follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). 
+Commit names should follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). Scope tags should be used liberally in order to specify where changes were made.
 
 ## Making Changes
 
