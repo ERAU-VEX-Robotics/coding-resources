@@ -95,14 +95,15 @@ Functions should be preceded by a multiline comment in the following format:
 
 ```
 /**
- * Function: <function_name>
- * A description of the function’s purpose
+ * A short description of the function’s purpose
+ *
+ * A more complete description of the function's purpose
  * 
  * @param <param_name> A description of a parameter to the function
  *
  * @return A description of what the function returns
  */
-<return_type> <function_name>(<param_name>);
+<return_type> <function_name>(<param_name>, ...);
 ```
 
 However, if the purpose of the function is extraordinarily clear and the function itself is relatively simple, you may use a simpler description. To be considered simple, a function must be around or below 15 lines in its implementation, take no arguments, and return `void`. If the function meets these criteria, you may describe the function like so:
