@@ -90,12 +90,12 @@ The below example demonstrates this for a C `struct` with an arbitrary number of
  * A short description of the struct
  *
  * A longer, more in-depth description of the struct
- *
- * <member_name>: A description of the specific struct member
  */
 
 typedef struct {
-    <type> <member_name>;
+    <type> <member_name>; /// Description of the field
+    /** Longer description for a field that needs it*/
+    <type> <member_name>; 
     ...
 } <struct_name>;
 ```
