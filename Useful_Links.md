@@ -16,3 +16,4 @@ Various links to important documentation or language tutorials. I included both 
 - [PROS Documentation](https://pros.cs.purdue.edu/v5/index.html): The homepage for the PROS API Documentation
 - [cprogramming.com C tutorial](https://www.cprogramming.com/tutorial/c-tutorial.html?inl=hp): A pretty good tutorial on the basics of the C programming language
 - [learncpp.com C++ tutorial](https://www.cprogramming.com/tutorial/c-tutorial.html?inl=hp): A good guide on the C++ programming language
+- [Introduction to PID Controllers](https://www.georgegillard.com/component/osdownloads/download/robotics/introduction-to-pid-controllers-2nd-edition): An excellent document by George Gillard explaining PID controllers
