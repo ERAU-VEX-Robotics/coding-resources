@@ -79,6 +79,27 @@ Every file should start with a multiline comment in the following format:
  */
 ```
 
+### Custom Types
+
+Custom type definitions should be preceded by a comment explaining the purpose of the type (i.e. why a custom data type was made). The comment should also specify what each member of the data type is.
+
+The below example demonstrates this for a C `struct` with an arbitrary number of members.
+
+```
+/**
+ * A short description of the struct
+ *
+ * A longer, more in-depth description of the struct
+ *
+ * <member_name>: A description of the specific struct member
+ */
+
+typedef struct {
+    <type> <member_name>;
+    ...
+} <struct_name>;
+```
+
 ### Variables
 
 No matter the type, variable declarations should be preceded by a comment explaining what the variable is.
