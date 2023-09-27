@@ -26,7 +26,7 @@ TabWidth: 4
 BreakConstructorInitializers: BeforeColon
 ```
 
-This enforces use of the LLVM Style guide formatting by default. However, it also sets the formatter to use tabs instead of spaces. This allows individual programmers to set the tab width they desire, instead of enforcing a constant indentation width. The last one is C++ specific.
+This enforces use of the LLVM Style guide formatting by default. However, it also sets the formatter to use tabs instead of spaces. This allows individual programmers to set the tab width they desire, instead of enforcing a constant indentation width. However, in some cases (e.g. aligning function parameters), tabs won't be used, as the alignment must stay constant no matter the tab width. This is why `UseTab` is set to `ForIndentation`. The last one is C++ specific.
 
 ## Naming
 
