@@ -10,6 +10,8 @@ For robot repositories, releases should correspond to a competition, or other re
 
 For non-robot repositories, release numbers should follow the [Semantic Versioning](https://semver.org) specification.
 
+This repository is an exception to that structure. As changes will be made sparingly (once the documents have reached a stable state) maintaining more than one branch is significantly overkill.
+
 ## Commit Naming 
 
 Commit names should follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). Scope tags should be used liberally in order to specify where changes were made.
