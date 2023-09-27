@@ -20,7 +20,7 @@ All club repositories should include a `.clang-format` file with the following c
 
 ```
 BasedOnStyle: LLVM
-UseTab: Always
+UseTab: ForIndentation
 IndentWidth: 4
 TabWidth: 4
 BreakConstructorInitializers: BeforeColon
