@@ -73,8 +73,11 @@ Every file should start with a multiline comment in the following format:
 
 ```
 /**
- * @file <file_name>
- * <explanation of what the file is for>
+ * @file The name of the file
+ *
+ * @brief A short description of the file
+ *
+ * @details A more detailed description of the file
  * ...
  */
 ```
@@ -105,7 +108,7 @@ typedef struct {
 No matter the type, variable declarations should be preceded by a comment explaining what the variable is.
 
 ```
-// <A description of what the variable is for>
+// A description of what the variable is for
 <type> <variable_name>
 ```
 
@@ -135,13 +138,13 @@ void <function_name>(void);
 
 ### General Code Documentation
 
-Wherever the exact purpose of a block of code isn't obvious, a comment should be included explaining what the code is supposed to do.
+Wherever the exact purpose of a block of code isn't obvious, a comment should be included explaining what the code is supposed to do. The below example illustrates this, with a complicated block of code inside an arbitrary function.
 ```
 <return_type> <function_name>(<param_name>) {
     ...
 
     /**
-     * <An explanation of what the following block of code does>
+     * An explanation of what the following block of code does.
      */
     <complex algorithm inside a function>
 }
