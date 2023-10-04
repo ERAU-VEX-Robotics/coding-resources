@@ -43,7 +43,7 @@ For any constant value (whether a` #define` or a `const`), all letters should be
 Custom types, whether structs or classes, should be in `Title_Snake_Case` (like so). For example, a struct for telemetry data should be defined as so:
 ```
 typedef struct {
-	…
+	...
 } Telem_Data;
 ```
 ## Comments
@@ -65,7 +65,7 @@ Longer comments should be formatted using `/**/` (“C-style” comments) like s
  ```
 
 ## Documentation
-This section details how various parts of the code should be commented to ensure that everyone reading the code understands the code.
+This section details how various parts of the code should be commented to ensure that everyone reading the code understands the code. We plan to use Doxygen to generate documentation, so most of the guide uses Doxygen tags, but we have yet to set up Doxygen with the code base.
 
 ### Files
 
@@ -73,7 +73,7 @@ Every file should start with a multiline comment in the following format:
 
 ```
 /**
- * File; <file_name>
+ * @file <file_name>
  * <explanation of what the file is for>
  * ...
  */
@@ -87,9 +87,9 @@ The below example demonstrates this for a C `struct` with an arbitrary number of
 
 ```
 /**
- * A short description of the struct
+ * @brief A short description of the struct
  *
- * A longer, more in-depth description of the struct
+ * @details A longer, more in-depth description of the struct
  */
 
 typedef struct {
@@ -116,9 +116,9 @@ Functions should be preceded by a multiline comment in the following format:
 
 ```
 /**
- * A short description of the function’s purpose
+ * @brief A short description of the function’s purpose
  *
- * A more complete description of the function's purpose
+ * @details A more complete description of the function's purpose
  * 
  * @param <param_name> A description of a parameter to the function
  *
