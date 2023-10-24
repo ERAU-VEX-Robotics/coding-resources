@@ -4,13 +4,13 @@ This document outlines how programmers should interact with club Git repositorie
 
 ## Repository Structure 
 
-We generally adhere to the [git flow](https://nvie.com/posts/a-successful-git-branching-model/) repository model. While the exact specifics of this can be seen at the link, the basic structure is summarized in [this document](https://nvie.com/files/Git-branching-model.pdf). 
+Repository structure should be determined by the use case for the repository. There are two main options, [git flow](https://nvie.com/posts/a-successful-git-branching-model/) and [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow).
 
-For robot repositories, releases should correspond to a competition, or other relevant deadline (e.g. running skills at a high school event). Hotfixes should only ever be made during competitions. Release names should reflect this, e.g. a release for the 2023 ASU Polytechnic competition, Tussle for the Southwest, should be named Tussle for the Southwest.
+The [git flow](https://nvie.com/posts/a-successful-git-branching-model/) repository model should be used for repositories where having specific versions makes sense. While the exact specifics of the model can be seen at the link, the author of the model also provides a [diagram](https://nvie.com/files/Git-branching-model.pdf) that outlines how the model works. Version numbers should follow the [Semantic Versioning](https://semver.org) specification.
 
-For non-robot repositories, release numbers should follow the [Semantic Versioning](https://semver.org) specification.
+On the other hand [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) should be used in repositories where having specific versions doesn't make sense. For example, this repository doesn't need versions, so GitHub flow makes sense. Similarly, robot repositories will not have dedicated versions, so Github flow makes more sense.
 
-This repository is an exception to that structure. As changes will be made sparingly (once the documents have reached a stable state) maintaining more than one branch is significantly overkill.
+In either case, whenever a branch is ready to be merged, the programmer should create a pull request in GitHub. This allows other programmers to review the merge. Also, if any merge conflicts occur, senior programmers can handle them.
 
 ## Commit Naming 
 
@@ -20,6 +20,7 @@ The following commit types will be used most often, so new programmers should be
 - `fix`: Fixing a bug
 - `feat`: Adding a feature
 - `docs`: Editing or adding documentation, whether as comments in the code or in a separate file
+- `refactor`: Changes to code that don't impact functionality e.g. changing a block of math to be more readable
 - `chore`: Changes to files that don't actually change any code, e.g. changes caused by a change in how code is formatted.
 
 This repository is an exception, as all changes could be considered `docs`. Instead, all commits should start with the file being changed, e.g. Git Policies: \<insert commit description>
