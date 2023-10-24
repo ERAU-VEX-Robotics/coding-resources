@@ -10,6 +10,8 @@ The [git flow](https://nvie.com/posts/a-successful-git-branching-model/) reposit
 
 On the other hand [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) should be used in repositories where having specific versions doesn't make sense. For example, this repository doesn't need versions, so GitHub flow makes sense. Similarly, robot repositories will not have dedicated versions, so Github flow makes more sense.
 
+In either case, whenever a branch is ready to be merged, the programmer should create a pull request in GitHub. This allows other programmers to review the merge. Also, if any merge conflicts occur, senior programmers can handle them.
+
 ## Commit Naming 
 
 Commit names should follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). Scope tags should be used liberally in order to specify where changes were made.
