@@ -18,6 +18,7 @@ The following commit types will be used most often, so new programmers should be
 - `fix`: Fixing a bug
 - `feat`: Adding a feature
 - `docs`: Editing or adding documentation, whether as comments in the code or in a separate file
+- `refactor`: Changes to code that don't impact functionality e.g. changing a block of math to be more readable
 - `chore`: Changes to files that don't actually change any code, e.g. changes caused by a change in how code is formatted.
 
 This repository is an exception, as all changes could be considered `docs`. Instead, all commits should start with the file being changed, e.g. Git Policies: \<insert commit description>
