@@ -5,37 +5,16 @@ repositories.
 
 ## Repository Structure 
 
-Repository structure should be determined by the use case for the repository.
-There are two main options,
-[git flow](https://nvie.com/posts/a-successful-git-branching-model/) and
-[GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow).
-
-The [git flow](https://nvie.com/posts/a-successful-git-branching-model/)
-repository model should be used for repositories where having specific versions
-makes sense.
-While the exact specifics of the model can be seen at the link, the author of
-the model also provides a
-[diagram](https://nvie.com/files/Git-branching-model.pdf) that outlines how the
-model works.
-Version numbers should follow the [Semantic Versioning](https://semver.org)
-specification.
-
-On the other hand,
-[GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
-should be used in repositories where having specific versions doesn't make
-sense.
-For example, this repository doesn't need versions, so GitHub flow makes sense.
-Similarly, robot repositories will not have dedicated versions, so Github flow
-makes more sense.
-
-In either case, whenever a branch is ready to be merged, the programmer should
-create a pull request in GitHub.
-This allows other programmers to review the merge.
-Also, if any merge conflicts occur, senior programmers can handle them.
-
-### Branch Naming
-
 The primary branch of any repository should be named `main`.
+
+`main` should be the only permanent branch in the repository.
+Other branches should be created to address specific issues, and branch names
+should describe the purpose of the fix.
+In general, branches should only be merged into `main` by a programming lead.
+For ordinary software team members or external developers, this must be through
+a pull-request in Github.
+Programming leads are allowed to merge their own code directly on the assumption
+that they know what they're doing and have tested their changes.
 
 ## Commit Messages 
 
